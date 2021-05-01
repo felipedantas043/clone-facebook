@@ -4,7 +4,7 @@ function ver_mais(){
         document.getElementById('ver+').innerHTML = "ver menos"
         document.getElementById('seta-cima').style.display = "block"
         document.getElementById('seta-baixo').style.display = "none"
-        document.getElementById('options').style.height = "1410px"
+        document.getElementById('options').style.height = "1460px"
         
     }else{
         document.getElementById('ver_mais_hidden').style.display = "none"
