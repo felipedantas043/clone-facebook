@@ -36,6 +36,15 @@ main{
     justify-content: space-between;
 
 }
+.header #pesquisa{
+    padding: 7px;
+    width: 200px;
+    height: 40px;
+    border-style: groove;
+    border-radius: 20px;
+    border: 1px solid white;
+    background: rgba(190, 190, 190, 0.192);
+}
 
 .menu{
     display: flex;
