@@ -14,7 +14,21 @@ function ver_mais(){
         document.getElementById('options').style.height = "350px"
 
     }
+}
 
-
+function mouseoverL() {
+    /*document.getElementById('left').style.background = "red"*/
+    document.getElementById('left').style.overflowY = "auto"
     
+}
+function mouseoutL() {
+    /*document.getElementById('left').style.background = "green"*/
+    document.getElementById('left').style.overflowY = "hidden"
+}
+
+function mouseoverR() {
+    document.getElementById('right').style.overflowY = "auto"
+}
+function mouseoutR() {
+    document.getElementById('right').style.overflowY = "hidden"
 }
