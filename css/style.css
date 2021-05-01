@@ -44,9 +44,6 @@ main{
     padding: 5px;
     margin: 0 5px 0 5px;
 }
-.menu li:hover{
-
-}
 
 .notificacoes{
     display: flex; 
@@ -62,11 +59,39 @@ main{
     grid-area: left;
     margin: 90px 30px 0px 0px;
     position: fixed;
+    display: block;
     width: 300px;
+    height: 575px;
+    overflow-y: auto;
 }
 
+/* scroll bar*/
+.left::-webkit-scrollbar{
+    width: 10px;
+}
+.left::-webkit-scrollbar-thumb{
+    background: rgb(167, 167, 167);
+    border-radius: 5px;
+}
+
+.right::-webkit-scrollbar-thumb{
+    background: rgb(167, 167, 167);
+    border-radius: 5px;
+}
+.right::-webkit-scrollbar{
+    width: 10px;
+    background: whitesmoke;
+}
+/*---*/
+.options{
+    height: 350px;
+}
 .options ul{
     list-style: none;
+}
+.options .submenu{
+    margin-top: 5px;
+    margin-left: -10px;
 }
 .options li{
     margin-left: 10px;
@@ -96,6 +121,12 @@ main{
     border-radius: 50px;
 }
 
+#ver_mais_hidden{
+    display: none;
+}
+
+
+
 
 .titulo{
     margin: 10px 0 10px 10px;   
@@ -107,6 +138,7 @@ main{
     margin-top: 20px;
     margin-left: 10px;
     border-top: 1px solid rgba(0, 0, 0, .2);
+    display: block;
 }
 .seus_atalhos ul{
     list-style: none;
@@ -185,7 +217,8 @@ main{
     grid-area: right;
     position: fixed;
     right: 0px;
-
+    height: 600px;
+    overflow-y: auto;
 }
 
 .anuncios a{
