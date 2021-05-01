@@ -32,3 +32,8 @@ function mouseoverR() {
 function mouseoutR() {
     document.getElementById('right').style.overflowY = "hidden"
 }
+
+
+
+//console.log(document.getElementsByClassName('legenda'))
+

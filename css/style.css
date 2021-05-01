@@ -23,98 +23,83 @@ main{
 }
 
 
-
-
 .header{
     grid-area: header;
-    display: grid;
-    grid-template-columns: 1fr 2fr 1fr;
-    grid-template-areas: 
-        "div nav1 nav2"
-    ;
-    background-color: white;
-    padding: 10px;
-    position: fixed;
-    top: 0px;
-    width: 100%;
-
-}
-.header div{
-    grid-area: div;
-}
-#nav1{
-    grid-area: nav1;
-}
-#nav2{
-    grid-area: nav2;
-}
-.container-header{
-    
-    width: 100%;
+    background: white;
     display: flex;
     justify-content: space-between;
-    position: relative;
-}
-.header div #pesquisa{
-    text-align: center;
-    padding: 7px;
-    margin-left: 8px;
-    width: 240px;
-    height: 43px;
-    border-radius: 20px;
-    border: 1px solid white;
-    background: rgba(190, 190, 190, 0.192);
-}
-#pesquisa:focus{
-    background: red;
-    border-style: none;
-}
-
-.logo{
-    width: 40px;
-    
-}
-.logo img{
+    position: fixed;
     width: 100%;
+    padding: 15px;
+    align-items: center;
 }
-
-
+.header div img{
+    margin-bottom: -15px;
+    margin-right: 10px;
+}
 
 .menu{
     display: flex;
-    align-items: center;
-    
 }
 .menu li{
     padding: 0;
-    margin: 0 5px 0 5px;
-    
+    margin: 0;
+    align-items: center;
 }
 .menu li a{
-    padding: 15px 30px 15px 30px;
-    border-radius: 7px;
-    
-    
+    color: black;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+    margin: 0 10px 0 10px;
+    border-radius: 6px;
+    text-align: center;
 }
 .menu li a:hover{
-    background-color: rgba(77, 77, 80, 0.137);
+    background: rgba(0, 0, 0, 0.11);
+    
 }
-.menu img{
-    width: 30px;
-    height: 27px;
-    top: 10px;
-}   
+.menu li a:hover .legenda{
+    display: block;
+    position: fixed;
+    
+}
+
+.legenda{
+    display: none;
+    background: rgba(0, 0, 0, 0.74);
+    color: white;
+    border-radius: 5px;
+    font-size: 9pt;
+    position: absolute;
+    padding: 6px;
+    margin: 10px auto;
+}
 
 
 .notificacoes{
-    display: flex; 
-    margin-right: 40px;  
-    
+    margin-right: 30px;
 }
-.notificacoes li{
-    margin: 0 5px 0 5px;
+.notificacoes li a{
+    color: black;
+    padding: 10px;
+    text-decoration: none;
+    margin: 0 2px 0 2px;
+    border-radius: 10px;
 }
 
+
+
+
+
+#search{
+    padding: 10px;
+    border-radius: 20px;
+    border: 1px solid rgba(77, 77, 80, 0.603);
+    background-color: rgba(77, 77, 80, 0.123);
+}
+#search::after{
+    border: none;
+}
 
 
 
@@ -188,7 +173,9 @@ main{
 #ver_mais_hidden{
     display: none;
 }
-
+#vermais{
+    cursor: pointer;
+}
 
 
 
@@ -349,9 +336,6 @@ main{
     }
     .left{
         display: none;
-    }
-    .header{
-        justify-content: flex-start;
     }
     
     
