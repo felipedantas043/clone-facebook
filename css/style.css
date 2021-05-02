@@ -79,13 +79,64 @@ main{
 .notificacoes{
     margin-right: 30px;
 }
+.notificacoes li{
+    margin: 0 5px 0 5px;
+
+}
 .notificacoes li a{
+    width: 100%;
     color: black;
     padding: 10px;
     text-decoration: none;
     margin: 0 2px 0 2px;
     border-radius: 10px;
 }
+.notificacoes li a:hover{
+    background-color: white;
+}
+.notificacoes li a:hover .legendas{
+    display: block;
+}
+
+
+
+
+.plus_icon{
+    position: absolute;
+    margin-left: 0px;
+    margin-top: -6px;
+    width: 30px;
+    height: 30px;
+    border-radius: 20px;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+.plus_icon:hover{
+    background-color: rgba(0, 0, 0, .1);
+}
+.plus_icon::before{
+    content: '';
+    position: absolute;
+    margin-left: -6px;
+    margin-top: 15px;
+    width: 15px;
+    height: 1px;
+    background-color: currentColor;
+}
+.plus_icon::after{
+    content: '';
+    position: absolute;
+    margin-left: -6px;
+    margin-top: 15px;
+    width: 15px;
+    height: 1px;
+
+    width: 15px;
+    height: 1px;
+    background-color: currentColor;
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg);
+}
+
 
 
 
