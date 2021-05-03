@@ -33,7 +33,24 @@ function mouseoutR() {
     document.getElementById('right').style.overflowY = "hidden"
 }
 
+function mostrar_left() {
+    let left = document.getElementById('left')
+    if(left.style.display == "none"){
+        left.style.display = "block"
+        left.style.width = "100%"
+        left.style.background ="white"
+        left.style.marginTop = "75px"
+        document.getElementById('menuicon').style.top = "60px"
+    }else{
+        document.getElementById('menuicon').style.top = "44px"
+        left.style.display = "none"
+        left.style.width = "260px"
+        left.style.marginTop = "90px"
+    }
+
+}
 
 
-//console.log(document.getElementsByClassName('legenda'))
+
+
 
