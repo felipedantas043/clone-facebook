@@ -38,6 +38,7 @@ function mostrar_left() {
     if(left.style.display == "none"){
         left.style.display = "block"
         left.style.width = "100%"
+        left.style.height = "100%"
         left.style.background ="white"
         left.style.marginTop = "75px"
         document.getElementById('menuicon').style.top = "60px"
